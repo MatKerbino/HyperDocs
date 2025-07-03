@@ -4,7 +4,9 @@
  */
 export async function fetchRoutes() {
     try {
-      const response = await fetch("/routes/routes.json");
+      // Determina o caminho base dependendo de onde o script está sendo executado.
+      const basePath = window.location.pathname.includes("viewer.html") ? "../" : "";
+      const response = await fetch(`${basePath}routes/routes.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

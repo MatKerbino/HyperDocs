@@ -4,6 +4,9 @@
 function createNavList(routes) {
     const ul = document.createElement("ul");
     ul.className = "nav-list";
+
+    const isViewerPage = window.location.pathname.includes("viewer.html");
+    const basePath = isViewerPage ? "../" : "";
   
     routes.forEach((route) => {
       const li = document.createElement("li");
@@ -17,9 +20,9 @@ function createNavList(routes) {
   
       if (hasRoute) {
         if (route.type === "html") {
-        link.href = `${route.url}`;
+        link.href = `${basePath}${route.url}`;
         } else { 
-        link.href = `_partials/viewer.html?content=${route.path}`;
+        link.href = `${basePath}_partials/viewer.html?content=${route.path}`;
         }
       } else if (hasChildren) {
         link.classList.add("nav-link-bold");
