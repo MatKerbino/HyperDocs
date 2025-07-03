@@ -1,0 +1,40 @@
+[
+    {
+      "title": "Visão Geral",
+      "type": "md",
+      "path": "repository/home.md"
+    },
+    {
+      "title": "Documentação",
+      "children": [
+        {
+          "title": "Instalação",
+          "type": "md",
+          "path": "repository/installation/index.md",
+          "children": [
+            {
+              "title": "Windows",
+              "type": "md",
+              "path": "repository/installation/windows.md"
+            },
+            {
+              "title": "macOS",
+              "type": "md",
+              "path": "repository/installation/macos.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sobre",
+      "children": [
+        {
+          "title": "Contato",
+          "type": "html",
+          "url": "pages/contato.html"
+        }
+      ]
+    }
+  ]
+  

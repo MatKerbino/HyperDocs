@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper-Docs</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <button class="mobile-menu-btn">☰</button>
+    <div class="sidebar-overlay"></div>
+    
+    <div class="container">
+        <button class="sidebar-toggle-btn" title="Recolher/Expandir barra lateral"><span class="toggle-arrow-icon">‹</span></button>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="sidebar-title">DOCX</a>
+            </div>
+            <nav class="sidebar-nav">
+                <!-- Navegação será gerada dinamicamente -->
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-area">
+                <h1>Como Este Manual Funciona</h1>
+                <p>
+                    Bem-vindo ao nosso manual dinâmico! Esta plataforma foi construída como uma <strong>Aplicação de Página Única (SPA)</strong>,
+                    o que significa que o conteúdo é carregado de forma rápida e fluida, sem a necessidade de recarregar a página inteira a cada clique.
+                </p>
+                
+                <h2>Os Componentes Principais</h2>
+                <p>A mágica acontece através da interação de três arquivos principais:</p>
+                <ul>
+                    <li><strong><code>index.html</code> (A Estrutura):</strong> Este arquivo que você está vendo agora. Ele funciona como o "esqueleto" visual, definindo a área do menu lateral e este espaço principal para o conteúdo.</li>
+                    <li><strong><code>routes/routes.json</code> (O Mapa):</strong> Um arquivo de configuração que define toda a estrutura do menu de navegação que você vê à esquerda. Ele diz ao sistema quais tópicos existem e onde encontrar o arquivo de conteúdo para cada um.</li>
+                    <li><strong><code>assets/js/main.js</code> (O Motor):</strong> O "cérebro" da aplicação. Este script lê o mapa (<code>routes.json</code>), constrói o menu de navegação dinamicamente e, quando você clica em um link, ele busca o conteúdo correspondente e o exibe aqui.</li>
+                </ul>
+                
+                <h2>Como Navegar</h2>
+                <p>Agora que você sabe como funciona, sinta-se à vontade para explorar! Use o menu lateral para navegar pelos diferentes tópicos da documentação.</p>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
