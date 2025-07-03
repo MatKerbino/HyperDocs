@@ -35,7 +35,8 @@ export async function loadMarkdownContent(contentArea) {
   try {
     contentArea.innerHTML = '<div class="loading">Carregando...</div>';
 
-    const response = await fetch(`../${contentPath}`);
+    // Com a tag <base>, o caminho do conteúdo é resolvido a partir da raiz do projeto.
+    const response = await fetch(contentPath);
     if (!response.ok) {
       throw new Error(`Erro ${response.status}: ${response.statusText}`);
     }
