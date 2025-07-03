@@ -1,40 +1,35 @@
 [
-    {
-      "title": "Visão Geral",
-      "type": "md",
-      "path": "repository/home.md"
-    },
-    {
-      "title": "Documentação",
-      "children": [
-        {
-          "title": "Instalação",
-          "type": "md",
-          "path": "repository/installation/index.md",
-          "children": [
-            {
-              "title": "Windows",
-              "type": "md",
-              "path": "repository/installation/windows.md"
-            },
-            {
-              "title": "macOS",
-              "type": "md",
-              "path": "repository/installation/macos.md"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Sobre",
-      "children": [
-        {
-          "title": "Contato",
-          "type": "html",
-          "url": "pages/contato.html"
-        }
-      ]
-    }
-  ]
+  {
+    "title": "template de licenças de software",
+    "type": "md",
+    "path": "repository/licencas-de-software.md",
+    "children": [
+      {
+        "title": "Licença MIT",
+        "type": "md",
+        "path": "repository/licenca-mit.md"
+      },
+      {
+        "title": "Licença Apache 2.0",
+        "type": "md",
+        "path": "repository/licenca-apache-2.0.md"
+      },
+      {
+        "title": "Licença GPLv3",
+        "type": "md",
+        "path": "repository/licenca-gplv3.md"
+      },
+      {
+        "title": "Licença BSD 3-clause",
+        "type": "md",
+        "path": "repository/licenca-bsd-3-clause.md"
+      },
+      {
+        "title": "Licença Creative Commons",
+        "type": "md",
+        "path": "repository/licenca-creative-commons.md"
+      }
+    ]
+  }    
+]
   
