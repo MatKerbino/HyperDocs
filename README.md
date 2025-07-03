@@ -20,7 +20,7 @@ A arquitetura do projeto é projetada para ser simples e modular. O fluxo princi
 3.  **Renderização do Menu:** Com base no JSON, o menu de navegação é construído dinamicamente na barra lateral. O sistema suporta categorias e submenus aninhados.
 4.  **Carregamento de Conteúdo:**
     *   Se uma rota é do tipo `md`, o link aponta para um visualizador (`_partials/viewer.html`) que recebe o caminho do arquivo Markdown como parâmetro (ex: `?content=repository/arquivo.md`). O visualizador então busca, converte e exibe o conteúdo Markdown.
-    *   Se uma rota é do tipo `html`, o link aponta diretamente para o arquivo HTML correspondente em `pages/`.
+    *   Se uma rota é do tipo `html`, o link aponta diretamente para o arquivo HTML correspondente (ex: `pages/sua-pagina.html`).
 
 Essa abordagem combina a simplicidade da edição de arquivos Markdown com a flexibilidade de páginas HTML completas.
 

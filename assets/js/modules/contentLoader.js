@@ -35,7 +35,7 @@ export async function loadMarkdownContent(contentArea) {
   try {
     contentArea.innerHTML = '<div class="loading">Carregando...</div>';
 
-    const response = await fetch(`/${contentPath}`);
+    const response = await fetch(`../${contentPath}`);
     if (!response.ok) {
       throw new Error(`Erro ${response.status}: ${response.statusText}`);
     }

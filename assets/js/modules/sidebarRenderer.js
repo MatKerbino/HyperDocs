@@ -17,9 +17,9 @@ function createNavList(routes) {
   
       if (hasRoute) {
         if (route.type === "html") {
-        link.href = `/${route.url}`;
+        link.href = `${route.url}`;
         } else { 
-        link.href = `/_partials/viewer.html?content=${route.path}`;
+        link.href = `_partials/viewer.html?content=${route.path}`;
         }
       } else if (hasChildren) {
         link.classList.add("nav-link-bold");
